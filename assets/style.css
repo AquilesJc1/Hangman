@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+#titulo{
+    font-weight: normal;
+    font-size: 26px;
+    padding: 10px;
+}
+
+footer.footer{
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main.game{
+    margin: 0 auto;
+}
+
+main.game img{
+    margin-left: 70px;
+}
+
+main.game img{
+    width: 250px;
+    height: auto;
+}
+
+.navbar h4{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+#loser,#winner{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    backdrop-filter: blur(2px);
+    display: none;
+    text-align: center;
+    place-items: center;
+}
+
+#loser button,#winner button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#loser button:hover,#winner button:hover{
+    background-color: #aaa;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+#loser{
+    background-color: rgba(255, 97, 97, 0.642);
+}
+
+#winner{
+    background-color: rgba(97, 97, 255, 0.642);
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttons button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.buttons button:hover{
+    background-color: #ccc;
+}
+
+p#word{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #6c5ce7;
+    margin-bottom: 5px;
+}
+
+p#type{
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    color: #888;
+}

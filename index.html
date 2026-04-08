@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da forca</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2 id="titulo">Jogo da forca</h2>
+        <h4>Vidas: <font id="vidas" color="#6c5ce7">6</font></h4>
+    </header>
+
+    <main class="game">
+        <div class="img">
+            <img id="hangman" src="assets/icons/img-6.png">
+        </div>
+
+        <div class="word">
+            <p id="word"></p>
+            <p id="type"></p>
+        </div>
+        <div class="buttons"></div>
+    </main>
+
+    <footer class="footer"><p id="inc">&copy; 2026 <font color="#6c5ce7">Aquiles Jacinto.</font> Todos os direitos reservados.</p></footer>
+    
+    <div id="loser">
+        <div class="loser-main">
+            <h1>Perdeu!</h1> <br>
+            <h3>A palavra é: " <font color="#6c5ce7" id="loser-word"></font> "</h3>
+            <div class="center"><button onclick="restart()">Recomeçar</button></div>
+        </div>
+    </div>
+
+    <div id="winner">
+        <div class="winner-main">
+            <h1>Venceu!</h1>
+            <div class="center"><button onclick="restart()">Recomeçar</button></div>
+        </div>
+    </div>
+
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
